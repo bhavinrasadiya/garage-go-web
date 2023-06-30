@@ -1,0 +1,186 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<html lang="en">
+
+<head>
+  <title>GarageGo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Style/Request.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img  alt="Paris" src="Images/logo.png" style="width: 75px;">
+                        </div>
+                        <div class="flip-box-back">
+                            <img  alt="Paris" src="Images/logo.png" style="width: 75px;">      
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+      </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li class="abc"><a href="#signup" >Signup</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Container (HOME Section) -->
+<section style="  background-image: url('Images/bg.jpg'); background-position: 50%;background-size: cover;background-repeat: no-repeat;">
+  <div id="HOME" class="container-fluid bg-grey" style="padding-bottom: 66px;background-color: #736a6a3d">
+    <div class="row">
+      <!-- Slider -->
+      <div class="col-sm-5" style="width: 54%; margin-left:1px;">
+        <h4 style="color:white">JOIN THE CHANGE</h4>
+        <h1 style="color:white">
+          Space service that moves work forward Get started for free
+        </h1>
+
+      </div>
+      <div class="col-sm-7 frm " style="margin-left: 155px;border-radius: 6px; margin-top: 44px;text-align: left;background-color: rgba(250, 250, 250, 0.95);width: 30%;padding-bottom: 14px;padding-top: 14px;">
+        <p class="frmheader">Login Here</p>
+        <!--form start-->
+        <div class="frm">
+          <form method="POST" action="LogInServlet">
+            <label for="usertype">User Type</label>
+            <select id="userType" name="userType">
+              <option value="administrator">Adminstator</option>
+              <option value="mechanic">Mechenic</option>
+              <option value="consumer">Consumer</option>
+              
+            </select>
+            <label for="EmailId">EmailId</label>
+            <input name="tfEmail" id="EmailId"required="required" type="text" class="txt" placeholder="Enter Your Email Id" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your Email Id'">
+            
+            <label for="tfPassword">Password</label>
+            <input type=password id="tfPassword" name="tfPassword" placeholder="Enter Password">
+
+            <input type="submit" value="Login" name="Login">
+          </form>
+        </div>
+        <!--form end-->
+
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row" style="margin-left:15px;">
+      <div class="col-sm-11">
+        <h2>About us</h2><br>
+        <h4>The GarageGo has emerged with solution of all four wheel and two wheel services which is available 24X7 just a click
+          away. The system includes regular four wheel and two wheel service, major car repair, detailing or any kind of
+          emergency car repair.</h4><br>
+        <h4>The GarageGo aims at making the car service and repair hassle free and time efficient with their night service along
+          with the facility of pick and drop to make our customers? life easy.</h4>
+        <h4>We provide service to car owners and service providers through our tech-enabled mobile app & website. It?s a ONE
+          STOP solution for all the car owners who have at some point experienced the anguish because of the lack of transparency
+          and up selling by your car service provider. The idea here is to make the whole experience of owning a car more
+          beautiful!</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Container (Services Section) -->
+  <div id="services" class="container-fluid text-center">
+    <h2>SERVICES</h2>
+
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="Images/about/1.png">
+        <h4>CAR AUDIO SERVICE</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/2.png">
+        <h4>CAR A/C RECHARGE</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/3.png">
+        <h4>FREE OIL CHANGE</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="Images/about/4.png">
+        <h4>ENGINE DIAGNOSTICS</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/5.png">
+        <h4>PARKING SENSORS CALIBRATION</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/6.png">
+        <h4>CAR BATTERY REPAIRS</h4>
+        <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla donec elite maecenas modern
+          forte elementum vehicula.</p>
+      </div>
+    </div>
+  </div>
+  <div id="signup" class="container-fluid text-center">
+    <h2>Signup</h2>
+
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="Images/about/consumer.png">
+         <input type="submit" value="Consumer" name="Consumer" onclick="redirectConsumer();" style="padding:8px 15px 8px 15px;">
+         <script>function redirectConsumer(){window.location.href="consumerSignup.jsp";}</script>
+
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/mechenic.png">
+         <input type="submit" value="Mechenic" name="Mechenic" onclick="redirectMechenic();" style="padding:8px 15px 8px 15px;">
+         <script>function redirectMechenic(){window.location.href="Signup.jsp";}</script>
+      </div>
+      <div class="col-sm-4">
+        <img src="Images/about/admin.png">
+         <input type="submit" value="Administrator" name="Administrator" onclick="redirectAdministrator();" style="padding:8px 15px 8px 15px;">
+       <script>function redirectAdministrator(){window.location.href="adminSignup.jsp";}</script>
+      </div>
+    </div>
+  
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </footer>
+</body>
+</html>

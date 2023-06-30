@@ -1,0 +1,156 @@
+#temp1 {
+    height: 15px;
+}
+
+.loginbox {
+   width: 454px;
+    height: 490px;
+    background: white;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 50px;
+    box-shadow: 2px 2px 2px 2px #b18b8b;
+}
+
+.showPassword {
+    color: #2b72e5;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.showPassCheck {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.header {
+    font-family: Ubuntu;
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.txtheader {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #2b72e5;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.txt {
+    width: 99%;
+    margin-bottom: 7px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #05090f;
+    font-family: 'Poppins', sans-serif;
+    ;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn {
+    margin-bottom: 25px;
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #2999eb;
+    color: #f0ecec;
+    ;
+}
+
+.signup {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 20px;
+    color: #05090f;
+    font-size: 20px;
+    margin-left: 11px;
+}
+.forgot {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #05090f;
+    font-size: 15px;
+    margin-left: 11px;
+    float:right;
+}
+.forgot:hover {
+    color: #2b72e5;
+}
+.signup:hover {
+    color: #2b72e5;
+}
+
+.alert {
+    color: #ff0000;
+    font-size: 17px;
+}
+
+#alert {
+    color: #007bff;
+}
+
+#abc {
+    height: 28px;
+    margin-left: -30px;
+    margin-bottom: -11px;
+}
+
+.dropdown {
+    margin-top: 4px;
+    display: block;
+    line-height: 0.9;
+    padding: .6em 1.4em .5em .8em;
+    width: 99%;
+    max-width: 99%;
+    border-color: black;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    background-image: url("../Images/dropDownArrow.png");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 18px auto, 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+}
